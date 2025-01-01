@@ -1,0 +1,24 @@
+{
+	"nsfw_rule": [
+		"sexual activity",
+		"explicit nudity",
+		"none of above all"
+	],
+
+	"pretrained": "llama3.2-vision:11b",
+
+	"msg_template": {
+		"role": "user"
+	},
+
+	"instruct": "Check the image and return the choice number based on the following rules.\n\n{}\n\n{}",
+	
+	"output_format_0": "Return JSON like {'choice': <Best choice number>}.",
+	"output_format_1": "Return JSON like {'choice': <Best choice number>, 'why': <The reason of choosing this choice.>}.",
+
+	"choice_phrase": "***{}*** If image contains {}, return {}.",
+
+	"option": {
+		"temperature": 0
+	}
+}
